@@ -3,7 +3,7 @@
 <dom-module id="cat-widget">
 
   <template>
-    <p>Here's a cat</p>
+    <p>Here's a cat: border={{border}}</p>
     <img src="http://thecatapi.com/api/images/get" />
     <!--
     
@@ -13,7 +13,14 @@
 
   <script>
     class CatWidget extends Polymer.Element {
-      static get is() { return "cat-widget"; }
+        static get is() { return "cat-widget"; }
+        static get properties() {
+            return { 
+                border : {
+                    type: String
+                }
+            }
+        }
     }
     customElements.define(CatWidget.is, CatWidget);
   </script>
