@@ -1,0 +1,20 @@
+<link rel="import"  href="https://polygit.org/components/polymer/polymer-element.html">
+
+<dom-module id="cat-widget">
+
+  <template>
+    <p>Here's a cat</p>
+    <img src="https://i.imgur.com/DKUR9Tk.png?fb" />
+    <!--
+    TODO: Try adding some other html elements inside the <template></template> block. For example, add <h1>A heading!</h1> or <a href=”stuff.html”>A link!</a>
+    --> 
+  </template>
+
+  <script>
+    class CatWidget extends Polymer.Element {
+      static get is() { return "cat-widget"; }
+    }
+    customElements.define(CatWidget.is, CatWidget);
+  </script>
+
+</dom-module>
