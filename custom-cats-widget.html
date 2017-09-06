@@ -1,0 +1,22 @@
+<link rel="import"  href="https://polygit.org/components/polymer/polymer-element.html">
+<link rel="import" href="custom-cat-widget.html">
+
+<dom-module id="custom-cats-widget">
+    <template>
+        <div style="display:flexbox">
+            <cat-widget></cat-widget>
+            <cat-widget></cat-widget>
+            <cat-widget></cat-widget>
+            <cat-widget></cat-widget>
+            <cat-widget></cat-widget>
+        </div>
+    </template>
+    
+    <script>
+        class CatsWidget extends Polymer.Element {
+            static get is() { return "cats-widget"}
+        }
+        customElements.define(CatsWidget.is, CatsWidget)
+    </script>
+    
+</dom-module>
